@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+<script src="/static/js/balance.js"></script>
+{% endblock scripts %}
+
+{% block contenido %}
+<h1 class="titulo-pagina">Tabla de inversiones</h1>
+
+<section id="section-tabla">
+  <table class="table table-striped tabla-inicio">
+    <thead class="bg-warning">
+      <tr>
+        <th class="text-white">Fecha</th>
+        <th class="text-white">Hora</th>
+        <th class="text-white">Moneda origen</th>
+        <th class="text-white">Cantidad a invertir</th>
+        <th class="text-white">Moneda destino</th>
+        <th class="text-white">Valor de la conversión</th>
+        <th class="text-white">Precio unitario</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpo-tabla">
+    </tbody>
+  </table>
+</section>
+
+{% endblock contenido %}
+
+
+
+
